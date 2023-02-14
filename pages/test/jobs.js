@@ -63,6 +63,7 @@ export default function JobSlider() {
   };
   const handleShow = (job) => {
     // function to show job modal and set description state
+    console.log(job);
     setDescription(job);
     setShow(true);
   };
@@ -153,9 +154,20 @@ export default function JobSlider() {
                 <div key={job.jobId}>
                   <Card className="card">
                     <Card.Body className="card-body">
-                      <div>
+                      <div className="card-div">
                         <Card.Title>{job.jobTitle}</Card.Title>
                         <Card.Subtitle>{job.companyName}</Card.Subtitle>
+                        <br />
+                        <Card.Subtitle>{job.location}</Card.Subtitle>
+                        <Card.Text>{job.estimatedSalary}</Card.Text>
+                        <Card.Text>{job.postedDate}</Card.Text>
+                      </div>
+                      <div className="card-div">
+                        <Card.Text
+                          dangerouslySetInnerHTML={{
+                            __html: job.jobDescription.slice(0,150) + "...",
+                          }}
+                        />
                         <Button
                           variant="primary"
                           className="mt-3"
