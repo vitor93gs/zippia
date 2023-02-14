@@ -1,0 +1,83 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Open Sans, sans-serif;
+}
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loading-text {
+  margin: 20px;
+}
+
+.title {
+  font-size: 46px;
+  letter-spacing: 4.6px;
+  line-height: 60px;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.back {
+  border-radius: 0.3rem;
+  padding: 10vh 15vh;
+  height: 100vh;
+  width: 100%;
+  background-color:rgba(216, 247, 255, 0.644)
+}
+.carousel-container {
+  position: relative;
+  width: 70%;
+  height: 150px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.carousel {
+  height: 40vh;
+  overflow: visible;
+}
+.carousel-container .carousel {
+  margin-bottom: 2rem;
+  overflow: visible;
+}
+
+.carousel .carousel .control-prev,
+.carousel .carousel .control-next {
+  position: absolute;
+  bottom: 5px;
+  width: 4%;
+  height: 9%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  z-index: 1;
+}
+
+.carousel .control-prev {
+  left: 5px;
+
+}
+
+.carousel .control-next {
+  right: 5px;
+
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: auto;
+  bottom: 20px; /* Change to desired distance from bottom */
+}
+
+.card {
+  height: 34vh;
+}
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
